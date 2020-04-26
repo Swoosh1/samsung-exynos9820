@@ -41,7 +41,7 @@ jobs:
                 +sdfat                   \
                 +ntfs                    \
                 +maple                   \
-                +mass_storage            \
+                +morosound            \
                 +boeffla_wl_blocker      \
                 +300hz                   \
     - name: Show information about build
