@@ -40,10 +40,15 @@ jobs:
                 +cifs                    \
                 +sdfat                   \
                 +ntfs                    \
+                +mass_storage            \
+                +sched_conservative      \
+                +bfq                     \
                 +maple                   \
                 +morosound               \
                 +boeffla_wl_blocker      \
                 +300hz                   \
+                +tcp_westwood            \
+                +wireguard
     - name: Show information about build
       run: cat build.info
     - name: Kernel Build
