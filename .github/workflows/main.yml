@@ -30,9 +30,9 @@ jobs:
     - name: Kernel Configure
       run: |
         ./build config                   \
+                os_patch_level=2020-04   \
                 model=${{ matrix.model}} \
                 name="CRUEL-V3.3-ziig"   \
-                +always_permit           \
                 +magisk                  \
                 +nohardening             \
                 +ttl                     \
@@ -47,8 +47,7 @@ jobs:
                 +morosound               \
                 +boeffla_wl_blocker      \
                 +300hz                   \
-                +tcp_westwood            \
-                +wireguard
+                +tcp_westwood            
     - name: Show information about build
       run: cat build.info
     - name: Kernel Build
